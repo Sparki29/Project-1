@@ -4,58 +4,55 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace ConsoleApp31
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the first number :");
+            //- Student {FullName} score is {AverageScore}
+            //-	Student {FullName} is living in {City}
+            //-	Student {FullName} address is {FullAddress}
+            //-	Please override the ToString() method to display detailed information about student.
 
-            Console.WriteLine("Please enter the second number :");
-
-            Console.WriteLine("Please choose and operation :");
-
-            Console.WriteLine("1 for +");
-
-            Console.WriteLine("2 for -");
-
-            Console.WriteLine("3 for *");
-
-            Console.WriteLine("4 for /");
-
-            Console.Write("Your choice is ");
-
-            string operation = Console.ReadLine();
-
-            int result = 0;
-
-            string operationAsString = "";
-
-            if (operation == "1")
-                {
-                result = firstNumber + secondNumber;
-
-                operationAsString = "+";
-                }
-            if (operation == "2")
-                {
-                result = firstNumber - secondNumber;
-
-                operationAsString = "-";
-                }
-            if (operation == "3")
-                {
-                result = firstNumber * secondNumber;
-
-                operationAsString = "*";
-                }
-            if (operation == "4")
-                {
-                result = firstNumber / secondNumber;
-
-                operationAsString = "/";
-                }
+            
         }
+
+        static Student CreateStudent(string FirstName, string LastName, string StudentNumber)
+        {
+            return new Student()
+            {
+                firstName = FirstName,
+                lastName = LastName,
+                studentNumber = StudentNumber
+            };
+        }
+    }
+
+    class Person
+    {
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+    }
+
+    class Student
+    {
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string studentNumber { get; set; }
+        public int age { get; set; }
+        public string address { get; set; }
+        public string scores { get; set; }
+        public string averageScores; // method?
+        public string fullAddress; // method?
+        public string fullName; // method?
+    }
+    
+    class Address
+    {
+        public string address { get; set; }
+        public string street { get; set; }
+        public string city { get; set; }
+        public string country { get; set; }
     }
 }
