@@ -1,0 +1,2 @@
+c:\users\student\source\repos\ConsoleApp31\ConsoleApp31\obj\Debug\ConsoleApp31.csprojResolveAssemblyReference.cache
+c:\users\student\source\repos\ConsoleApp31\ConsoleApp31\obj\Debug\ConsoleApp31.csproj.CoreCompileInputs.cache
